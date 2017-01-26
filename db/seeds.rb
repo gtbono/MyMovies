@@ -12,6 +12,13 @@ movies = [
 	{title: "Raiders of the Lost Ark", release_date: '12-Jun-1981'}
 ]
 
+Actor.create!(name: "Angelina Jolie", gender: "female", birthdate: "25-Jan-1990")
+Actor.create!(name: "Will Smith", gender: "male", birthdate: "25-Sep-1960")
+Actor.create!(name: "Margot Robbie", gender: "female", birthdate: "15-Fev-1940")
+
+Director.create!(name: "Quentin Tarantino", gender: "male", birthdate: "10-Nov-1950")
+Director.create!(name: "Outro Diretor", gender: "male", birthdate: "11-Nov-1940")
+
 movies.each do |movie|
 	Movie.create!(movie)
 end
