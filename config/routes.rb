@@ -1,5 +1,5 @@
 Rails.application.routes.draw {
-  get('movies/index');
+  get('movies/index' => 'movies#index');
   get('movies/new' => 'movies#new');
   get('movies/:id' => 'movies#show');
   post('movies/create');
